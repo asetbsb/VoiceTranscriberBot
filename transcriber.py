@@ -1,8 +1,7 @@
 import whisper
 import os
 
-# Load the model once globally
-model = whisper.load_model("base")  # You can also try "small" or "medium" if needed
+model = whisper.load_model("base")  
 
 def transcribe_audio(file_path: str) -> str:
     try:
